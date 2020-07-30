@@ -144,6 +144,14 @@
     }).fail( function(data){
       console.log(data);
       var error_msg = "Form submitted succefully <br>";
+
+      document.getElementById("names").value="";
+      document.getElementById("emails").value="";
+      document.getElementById("subjects").value="";
+      document.getElementById("messges").value="";
+      setTimeout(function() { 
+        $('#div').fadeOut('slow'); 
+    }, 1500);
      /* if(data.statusText || data.status) {
         error_msg += 'Status:';
         if(data.statusText) {
