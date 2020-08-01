@@ -143,7 +143,7 @@
       }
     }).fail( function(data){
       console.log(data);
-      var error_msg = "Form submitted succefully <br>";
+      var error_msg = "Message submitted Succefully <br>";
 
       document.getElementById("names").value="";
       document.getElementById("emails").value="";
